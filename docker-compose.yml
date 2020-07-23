@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-    hephaestus:
+    hephaestus-r:
         build:
             context: .
             dockerfile: Dockerfile
         ports:
-            - "8888:8888"
+            - "${JPORT:-8888}:${JPORT:-8888}"
         volumes:
             - .:/home
-        command: jupyter notebook --ip='*' --port=8888 --no-browser --allow-root --notebook-dir=/home
+        command: jupyter lab --ip='*' --port=${JPORT:-8888} --no-browser --allow-root --notebook-dir=/home
