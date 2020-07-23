@@ -10,6 +10,19 @@ The original Hephaestus environment was designed to be as small and fast as poss
 
 Hephaestus-R has opted to remove some of the educational packages as well as consideration on space in favor of having as many possible tools available for users.
 
+## What's Inside
+* Jupyter Lab
+* IBM Qiskit
+* Google Cirq
+* Xanadu Strawberry Fields
+* D-Wave Ocean
+  * `minorminer` - heuristic graph embedding utility
+* CQCL Pytket
+  * All interfaces included as well: `pytket-qiskit`, `pytket-honeywell`, etc.
+
+### Planned Additions
+* Rigetti Forest
+
 ## Usage
 
 Ensure that Docker is installed on your machine and running in the background.
